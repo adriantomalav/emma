@@ -4,9 +4,8 @@ from PIL import Image
 import requests
 from io import BytesIO
 import json
-# from string import Template
 
-openai_api_key = "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"
+openai_api_key = st.secrets["openai_secret_key"]
 
 conversation_plan = """
 Step 1: Important! As part of your first reply, ask for the user's name and best work email to follow the conversation.
